@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(174, 212, 238);
+    
+    
+}
+
+#repeat{
+    background-image: url('pla2.jpg');
+    background-repeat: repeat;
+}
+
+#y{
+    background-image: url('pla2.jpg');
+    background-repeat: repeat-y;
+}
+#x{
+    background-image: url('pla2.jpg');
+    background-repeat: repeat-x;
+}
+#img{
+    background-image: url('pla2.jpg');
+}

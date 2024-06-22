@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        h1{
+           color: #0941aa;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>css in line </h1>
+    <p> quando tiver uma modificação espesifica para uma taque , em uma pagina espesifica utilizamos o css dentro da propria tg</p>
+    <p> Como por exemplo a tag  &lt;p&gt; texto &lt;/p&gt; , para fazer uma modificação somente nela : na tag de inicio &lt;p style="tag de modificação: variavel ; "&gt; &lt;/p&gt;   </p>
+    <P style="color: blueviolet;">como aqui, so essa linha esta roxa.</P>
+    <br>
+
+    <h1>css internos/ head</h1>
+    <p> esse formato já se encaixa quando tem alguma modificação somente na quela pagina do site.</p>
+    <p> na parte do head da pagina html , apos o title colocar a tag &lt;style&gt;.</p>
+    <p>Dentro da tag style vai colocar qual tag do html gostaria de modificar , como mostrado a seguir:</p>
+    <pre><code><p>          &lt;style&gt;
+
+                selector &lcub; 
+                   property: value;
+                 &rcub;
+
+            &lt;/style&gt;
+         
+    </pre></code></p>
+
+    <p> apos colocar a tag que gostaria de modificar, sempre abrir e fechar chaves. Tambem é importante resaltar que apos finalizar o comando de modificação em css, smepre colocar um ; no final de tudo , para mostrar que esta encerrando aquele modificao. </p>
+   
+    <br>
+    <h1>css externo</h1>
+    <p> agora se a modificação que vc ira fazer em uma pagina sera em todas, é mais usual e facil utilizar o css externo a sua pagina do html.</p>
+    <p> utilizando a tag link :</p>
+    <p>  &lt;link rel="stylesheet" href="estilo.css"&gt;</p>
+    <p> dessa forma o program vai chamar uma pagina que tera as alterações em css, não presisando colocar as modificações na pagina, mas sim em uma externa.</p>
+    <p> na pagina do css é importante colocar a regra de @charset "utf-8"; ,pois essa regra fara com que o programa nao tenha problema com a gramatica brasileira.</p>
+    <h2>obs: ordem de comando</h2>
+    <P> no html ele sempre vai obdecer a tag que estara inline (dentro da propria tag), interna (na parte da head), e por ultimo o externo (em uma ppagina externa propia com css)</P>
+    <pre><code><p>         
+
+        tag tag(tem que estar dentro da primeira trag)&lcub; 
+           property: value;
+         &rcub;
+ 
+    </pre></code></p>
+    <h3> para classes</h3>
+    <p> quando vc determina class="" dentro de uma tag no html , aquela tag tera suas modificações de acordo com o nome da class e não mais pela tag.</p>
+    <pre><code><p>         
+
+        .nomeDaCLasse&lcub; 
+           property: value;
+         &rcub;
+ 
+    </pre></code></p>   
+    <p> se colocar uma tag.nomeDaClasse as modificações só serão validas para a class que tiver dentro da tag dita antes do .</p>
+    <p> da para uma tag ter duas class, dentro da tag class=" nomeDaCLasse nomeDaCLasse", assim mesmo que sejam duas class separadas pelo spaço aquela tag tera as alterações das duas.</p>
+    <p>obs: sempre tem nque por o ponto grudado no nome da class , para indicar que é uma class.</p>
+    <br>
+
+    <h2>ID</h2>
+    <p> o id funciona bem parecido com o class, porem na hora do css, para chamar um id se coloca a # e depois o nome do id. <br>Mesma coisa da class só troca o . por #. </p>
+    <p> Porem ele tem suas diferenças, como uma tag não pode ter mais de um id, como no class  pode. O id não pode ser repetido, ou seja enquanto no class vc poderia usar uma mesma class par outras tags o id não pode, é somente para uma.<br> Ele tambêm é inportante para o javascript encontrar elementos únicos na página, como tambem pode ser usado na URL para rolar até certo elemento da página</p>
+    <br>
+
+    <h1>DIV</h1>
+    <p>Essa tag divide o programa em blocos para as funçoes.<br> É uma tag que não sera mostrada ao usuario , é somente uma tag de organização.</p>
+    <p> Essa tag facilita colocar um estilo atravez do css, em um bloco inteiro , é mais rapido e organizado do que atravez de uma id ou class em cada tag.</p>
+    <p>A tag div normalmente vem acompanhada do id , para que um bloco do seu html seja modificado de uma vez.</p>
+    <p>  &lt;div&gt; conteudo , como outras tgas   &lt;/div&gt;</p>
+
+
+    <h1>tags extras do css</h1>
+    <h3>backGround-</h3>
+    <p><strong> -color</strong>  = é para altera o fundo inteiro do elemento.</p>
+    <p id="img"><strong>-image:url('img.extenção'); </strong> = esse ta é para tornar o fundo uma imagen, entao em vez do fundo ser uma cor vai ser uma imagem, o url('') indica o caminho que o programa desse seguir para encontrar a imagem. </p>
+    <p id="repeat"><strong>-repeat </strong>:essa tag altera a posição da aonde a imagem da tag anterior aparecera. Essa tag tem 3 tigo, a primeira que é so o repeat , que repete nas duas direções.</p>
+    <pre><code>  <p id="y"> tem o repeat-y , que coloca na vertical
+
+ 
+    </pre></code> </p>
+    <pre><code>
+    <p id="x">e o repete-x , que repete na horizontal
+    
+
+    </pre></code> </p>
+
+    <p><strong>-attachment</strong>=ela define se a imagem ira desce/subir junto com a barra se rolagem ou se ficara imovel.</p>
+    <p> para mais informações sobre backGround <a href="https://www.devmedia.com.br/css-background/38313#position" target="_blank" rel="external">clik aqui</a></p>
+    
+    <h3>backGround X color</h3>
+    <p> background altera o fundo , ja o color altera a cor da letra/escrita.</p>
+    <br/>
+    
+    <h1>alinhamento</h1>
+    <p><strong>text-aling:center;</strong> = alinha o texto no centro da tela.</p>
+    <p><strong>text-aling:right;</strong> = alinha o texto para a direita.</p>
+    <p><strong>text-align: justify;</strong> = faz com que os texto fiquem alinhados e quadrados.</p>
+    <p><strong>display:inline</strong>= deixa os conteudos um do lado do outro na mesma linha. porem ele não permite modificações de tamanho.</p>
+    <p><strong>display:inline-block</strong>= o block permite que as dimensõees sejam alteradas, como tambem o padding e a margin.</p>
+
+    <h1>font</h1>
+    <p><strong>font-size:</strong>=define o tamanho da fonte, em px/% .</p>
+    <p><strong> font-weight:</strong>= define a espressura da fonte/letra . temos algumas palavras chaves , como <strong> font-weight: bold;</strong> que deixa a frase em negrito</p>
+    <p style="font-weight: bold;">This is a bold text</p>
+    <p><strong> font-family</strong>= define a fonte/estilo da letra.</p>
+     
+    <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+</html>

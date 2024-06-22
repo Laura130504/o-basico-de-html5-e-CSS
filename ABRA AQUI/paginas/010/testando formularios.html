@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+ <title> TESTANDO FORMULARIOS </title>           
+ <meta charset="utf-8"/>
+ <style>
+    body{
+       background-color: rgb(174, 212, 238);
+    }
+</style>
+</head>
+<body>
+    <h1> Testando formularios</h1>
+    
+    <h2> caixa de texto</h2>
+    <p> A caixa de texto é determinada na tag type=" text" . para funcionar o todo presisa que a tag form,da tag label e input juntas:</p>
+    <p> &lt;form&gt;</p>
+    <p> &lt;label for ="o nome da variavel aonde será armazenada" &gt; texto de instrução ao usuario &lt;/label&gt; </p>
+    <p> &lt;input type="text" name="caixa1" value="mostra uma mensagem na caixa de resposta"&gt; </p>
+    <p> &lt;/form&gt;</p>
+
+    <p>obs:  a tag name é a mesma da taga for, ela é a tag que armazenera a resposta do usuario. </p>
+  
+    <p><ins>Dessa forma ficara assim:</ins></p>
+    <form>
+    <label for ="caixa1">digite seu nome :  </label><!--label=variavel , for= sera armazenada, " aqui". == variavel sera guardada aqui-->
+    <input type="text" name="caixa1" value="digite"><!--type= tipo da vaiavel , text= caixa para qualquer forma de texto ,name=local aonde a variavel sera armazenada-->
+         
+    <br/><br/>
+       
+    <label for="caixaso">digite seu sobrenome:</label>
+    <input type="text" name="caixaso"> <!--name é um comando fiquisso -->
+    </form>
+    <br>
+    <p> obs: lembrando que se você não colocar a segunda linha de comando vai só aparecer a parte escrita. assim:</p>
+    <label for="caixaso">digite seu sobrenome:</label><!--sem a segunda linha de comando ele so mostra a mensagem-->
+    <br/>
+    <p>obs: o value pode ou não ser colocado</p>
+
+    <h2>Radio : somente uma resposta.</h2>
+    <p> type="radio", esse formato seria para quando se deseja uma resposta dentre outras do usuario. Para isso se utiliza dessa forma:</p>
+    <p>&lt;form &gt;</p>
+    <p> &lt;p&gt; pergunta para direcionar o usuario &lt;/p&gt;</p>
+    <p> &lt;input type="radio" name="nome da variavel aonde sera armazenado" value="oq sera mostrado para o usuario"&gt;mensagem que sera mostrada para o usuario do lado da bolinha</p>
+    <p> &lt;input type="radio" name="nome da variavel aonde sera armazenado" value="oq sera mostrado para o usuario"&gt;mensagem que sera mostrada para o usuario do lado da bolinha </p>
+    <p>&lt;/form &gt;</p>
+    <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+    <form>
+        <p>Qual o seu sexo:</p>
+        <input type="radio" name="sexo" value="masculino">Masculino <!--radio=bolinha para marcar um, value=opção que sera mostrada-->
+        <input type="radio" name="sexo" value="feminino">Feminino<!--name é como a caixa que guarda todas as informaçoes-->
+        <br/>
+    </form>
+    <p>obs: se o name forem diferentes entre as opções o usuario consiguira marcar os dois, pois se trata de duas variaveis diferentes</p>
+
+    <h2>Checkbox</h2>
+    <p>caixa de seleção de varias opções</p>
+    <p>Esse formato é para quando se deseja mais de uma resposta do usuario . </p>
+    <pre><code><p> 
+    &lt;form&gt;    
+      &lt;p&gt;sabe programar em qual linguagem?: &lt;/p&gt;
+      &lt;input type="checkbox" name="nome da variavel 1" value="opção 1"&gt;opção 1
+      &lt;br/&gt;
+      &lt;input type="checkbox" name="nome da variavel 2" value="outra opção"&gt;outra opção
+    &lt;/form&gt;
+    </p></code></pre> 
+    <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+    <form>
+     <p>sabe programar em qual linguagem?:</p>
+     <input type="checkbox" name="prog1" value="html">html
+     <br/>
+     <input type="checkbox" name="prog2" value="cpp">c++
+     <br/><br/>
+    </form>
+    
+
+    <h2>Menu DropDown</h2>
+    <p> escolher umas das opções ja dadas.</p>
+    <pre><code><p> 
+    &lt;form&gt;
+       &lt;select  name="nome da variavel mãe"&gt;
+           &lt;option value="opção 1"&gt; opção 1  &lt;/option&gt;
+           &lt;option value="opção 2"&gt; opção 2  &lt;/option>
+           &lt;option value="opção 3"&gt; opção 3  &lt;/option&gt;
+           &lt;option value="opção 4"&gt;opção 4 &lt;/option&gt;
+
+       &lt;/select&gt; 
+    &lt;/form&gt;
+    </p></code></pre> 
+    <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+    <form>
+        <select  name="universidade1">
+            <option value="fib"> selecione </option>
+             <option value="fib"> fib </option>
+             <option value="usp1"> USP </option>
+             <option value="unesp1">unesp</option>
+
+        </select>
+    </form>
+
+    <p>obs: para determinar qual sera a primeira opção apresentada , basta colocar como primeira option , ou na mesma tag de option colocar o comando <strong>selected</strong>. </p>
+    <form>
+        <select  name="universidade2">
+            <option value="fib"> selecione </option>
+             <option value="fib"> fib </option>
+             <option value="usp1"> USP </option>
+             <option value="unesp1" selected>unesp</option> <!-- selected== primeiro a ser mostrada-->
+
+        </select><br/><br/>
+    </form>
+   
+    <h2>Caixa de texto</h2>
+   <p> é uma caixa de texto que armazenara todas as informaçoes , só que agora com muitas linhas.</p>
+   <pre><code><p> 
+    &lt;form&gt;
+    &lt;textarea rows="10" cols="30" name="obs"&gt;TEXTO QUALQUER &lt;/textarea&gt;
+    &lt;/form&gt;
+   </p></code></pre> 
+   <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+   <form>
+     <textarea rows="10" cols="30" name="obs">TEXTO QUALQUER </textarea>
+   </form>
+   <h2>Button</h2>
+   <p> ao apertar no botão ele mostrara uma mensagem no topo da pagina.</p>
+   <pre><code><p> 
+    &lt;form&gt;
+       &lt;input type="button" value="mensagem que aparecera no botão" onclick="alert('mensagem que aparecera no topo da pagina');"&gt;
+    &lt;/form&gt;
+   </p></code></pre> 
+   <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+   <form>
+    <input type="button" value="aperte aqui" onclick="alert('oiiiiiiiiiiiiiiii');"><br/><br/>
+   </form>
+    
+   <h2>password</h2>
+   <p> Texto escondido, é para oq o usuario digitar não aparecer (senha).</p>
+   <pre><code><p> 
+      &lt;form&gt;
+      &lt;label for="password"&gt;digite uma senha:&lt;/label&gt;
+      &lt;input type="password" name="senha"&gt;
+      &lt;/form&gt;
+   </p></code></pre>
+   <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+   <form>
+     <label for="password">digite uma senha:</label>
+     <input type="password" name="senha"><!--password=texto escondido-->
+   </form>
+
+   <h2>hidden</h2>
+   <p>Um campo oculto permite que os desenvolvedores web incluam dados que não podem ser vistos ou modificados pelos usuários quando um formulário é enviado.</p>
+   <pre><code><p> 
+     &lt;form&gt;
+     &lt;p&gt;mensagem para direcionar o ususario: &lt;/p&gt;
+     &lt;input tipe="hidden" type="text" name="email" value="abc@cde.com"&gt;
+     &lt;/form&gt;
+   </p></code></pre>
+   <p><ins>Dessa forma ele sera paresentado assim:</ins></p>
+   <form>
+      <p>digite seu email:</p>
+       <input tipe="hidden" type="text" name="email" value="abc@cde.com">
+    </form>
+    <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+
+</html>

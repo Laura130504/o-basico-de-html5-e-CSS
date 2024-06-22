@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+           background-color: rgb(174, 212, 238);
+        }
+    </style>
+</head>
+<body>
+    <h1>tabelas</h1>
+    <p>Para iniciar a criação de uma tabela precisa criar a tg  &lt;table &gt;   </p>
+    <P> Depois cada linha sera &lt;tr&gt; e cada coluna sera &lt;td&gt; , ou seja: </P>
+    <pre><code><p> 
+        &lt;table &gt;  
+          &lt;tr&gt;
+               &lt;td&gt; texto/img  &lt;/td&gt;
+               &lt;td&gt; texto/img  &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table &gt;  
+    </p></code></pre>
+    <p>Dessa forma a tabela fica assim:</p>
+    <table border="1">
+        <tr>
+            <td><img src="img.jfif" alt="imagems aleatoria" width="100" height="100"></td>
+          
+            <td>oiiii </td>  
+             
+        </tr>
+        <tr>
+            <td> olha o texto qualquer aqui</td>
+
+            <td><img src="img.jfif" alt="imagems aleatoria" width="100" height="100"></td>
+        </tr>
+    
+    </table>
+    <h2>temos algumas tags que ajudam a moldar a tabela:</h2>
+    <p>  como a tag cospan, é uma tag utilizada junto do  &lt;td&gt;. Ela serve para indicar quantas colunas/espaços que essa coluna deve ocupar.</p>
+    <p>por exemplo a img ocupar 2 espacos em vez de 1:</p>
+    <table border="1">
+        <tr>
+            <td colspan="2" align="center"><img src="img.jfif" alt="imagems aleatoria" width="100" height="100"></td>
+                
+        </tr>
+        <tr>
+            <td> olha o texto qualquer aqui</td>
+
+            <td>oiiiiiiiiiiiiiiiiiiiiiiiiii</td>
+        </tr>
+    
+    </table>
+
+    <p> Tambêm da para utilizar a tag width(largura) e a tag height(altura) na tag &lt;table &gt;, para indicar seu tamanho. </p>
+    <p> Tem como colocar a tag <strong>border="solid"</strong> (que seria para definir a borda da tabela) dentro da tag  &lt;table &gt;. Dentro do css usa a tag border:cor que deseja; assim a tabela ficara com a cor que escolher. Como tambem <strong> 1px</strong>= um numero px que determina a grossura da tabela.</p>
+    <table border="solid" style="border:pink;">
+        <tr>
+            <td><img src="img.jfif" alt="imagems aleatoria" width="100" height="100"></td>
+          
+            <td>oiiii </td>  
+             
+        </tr>
+        <tr>
+            <td> olha o texto qualquer aqui</td>
+
+            <td><img src="img.jfif" alt="imagems aleatoria" width="100" height="100"></td>
+        </tr>
+    
+    </table>
+    <p> vertical-aling: propriedade ; = é um elemento para alinhar verticalmente qualquer propriedade, dentro do css.</p>
+
+    <h1>Padding</h1>
+    <p>É um alinhamento que fica entre o conteudo e a borda.</p>
+    <p>Teremos padding-posiçao:quantidade px ;</p>
+    <P> Vamos ter padding-top (em cima) , padding-bottom (inferior), -right (direita), -left (esquerda) e etc.</P>
+    <img src="caixa.png" alt="tabela">
+
+    <h1>Margin</h1>
+    <p>margin tem o mesmo funcionamento do padding a diferença é que ela modifica o distanciamento entre a borda e o resta da tela/ elemento mias proximo.</p>
+    <p> margin:100px 20px 0px 0px; = margin=margens , o primeiro px determina o espaço do topo, o segundo pela direita, e o terceiro pela base e a quarta pela esquerda .</p>
+    <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+</html>

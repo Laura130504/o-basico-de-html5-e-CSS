@@ -1,0 +1,90 @@
+<!doctype html>
+<htm lang="pt-br"> 
+<head>
+    <META CHARSET='UTF-8'/>
+    <meta name='viewport' content='wicht-device-nidth, initial-sacle-1.0'>
+    <title> listas </title>
+</head>
+
+<body>
+	<h2>listas ordenadas &lt;ol&gt; - &lt;/ol&gt;</h2>
+	<p> na lista ordenada podemos ter 5 type &lt;ol type='' &gt; sendo 1 (ordenar por numeros ), ou A/a (por alfabeto) ou por I/i por nuemros romanos ) </p> 
+	<p> um detalhe, a partir do comando START, da para começar de um numero/letra determinado . &lt;ol type='qual stilo' start='por onde começa'&gt;
+
+	<ol type='1' start='2'>
+		<li> cortar cabelo </li>
+		<li>lihgar para a mae</li>
+		<li> mae quer me matar</li>
+		<li>passou </li>
+	</ol>
+	<ol type="A" start='12'><!--PQ O START NÃO FUNCIONA EM LETRAS? pq o start entende a ordem pelo numero-->
+		<li>laura</li>
+		<li>mamae</li>
+		<li>nivia</li>
+    </ol>
+	<ol type="I" start="4"><!--nem aqui funciona? é so colocar a posição da letra que gostaria que começase-->
+		<li>um indiuzinho</li>
+		<li> dois indiuzinho</li>
+		<li> tres indiuzinho</li>
+	</ol>
+    <h2>listas não ordenadas &lt;ul&gt; - &lt;/ul&gt; </h2>
+    <p>Na lista não ordenada, temos 3 type  &lt;ul type&gt;, disc (que é a bolinha fechada), tambem tem o circle (bolinha aberta) e por ultimo o square (um quadrado pintado)</p>
+	<ul type="disc">
+		<li>tomate</li>
+		<li>maça</li>
+		<li>pera</li>
+		<li>abacate</li>
+	</ul>
+	<ul type="circle">
+		<li>tomate</li>
+		<li>maça</li>
+		<li>pera</li>
+		<li>abacate</li>
+	</ul>
+	<ul type="square">
+		<li>tomate</li>
+		<li>maça</li>
+		<li>pera</li>
+		<li>abacate</li>
+	</ul>
+	<h2>listas mistas </h2>
+	<p> uma lista mista e aquela que utiliza tanto a lista ordenada (ol) como a não ordenada (ul)</p>
+	<p>para fazer isso primeiro escreva uma das listas, depois a baixo da tag  &lt;il&gt; coloca a outra lista e escreve normal</p>
+	<pre>
+		<code>
+		  <p> codigo:
+			&lt;ol&gt;
+			 &lt;il&gt;essa é a lista ol &lt;/il&gt;
+			 &lt;ul&gt;
+			   &lt;il&gt;agora temos uma lista ul dentro da ol &lt;/il&gt;
+			   &lt;ol type="A"&gt; 
+			     &lt;il&gt; e assim por diante &lt;/il&gt; 
+			   &lt;/ol&gt; 
+			 &lt;/ul&gt;
+			&lt;/ol&gt; 
+	      </p>
+	   </code>
+	 </pre>
+	
+	<p>Resultado:</p>
+	<ol>
+		<li>essa é a lista ol</li>
+		<ul>
+			<li>agora temos uma lista ul dentro da ol</li>
+			<ol type="A"> 
+				<li>e assim por diante </li>
+			</ol>
+		</ul>
+	</ol>
+	<h2>lista de definção</h2>
+	<p> a lista de definição é como se fosse um dicionario. </p>
+	<p>primeiro a lista de definições ( &lt;dl&gt; ) ,depois temos o termo ( &lt;dt&gt; ) e em baixo do termo , temos a definição ( &lt;dd&gt; )</p>
+    <dl>
+		<dt>-namorado (dt)</dt>
+		<dd>alguem para contar sempre (dd)</dd>
+	</dl>
+
+	<h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<htm lang="pt-br"> 
+<head>
+    <META CHARSET='UTF-8'/>
+    <meta name='viewport' content='wicht-device-nidth, initial-sacle-1.0'>
+    <title> negrito e italico </title>
+    <style>
+        marck {background-color:blue;}
+    </style>    
+
+</head>
+
+<body>
+   <h1>principais formatações </h1>
+   
+   <h2> negrito/ destaque </h2>
+   <p> nesta frase ,tenho um <b> termo em negrito </b> usando a tag &lt; b &gt; (não semantica. por forma)</p>
+   <p> nesta frase, temos um <strong> termo em destaque</strong> utilizando a tag &lt; shtrong &gt; </p>
+   
+   <h2> italico / enfase </h2>
+   <p> netsa frase, temos um <i> termo i
+   em italico </i> usando a tag &lt; i &gt; (nao semantica) </p>
+   <P> e nessa outra frase temos um <em> termo e menfase </em> com a tag &lt; em &gt; em que ela é semanatica </p>
+  
+   <h2> texto marcado/ marca texto </h2>
+   <p> para decidir a cor que sera de todos os marck , dentro da parte de &lt; head &gt; coloca outa tag ,&lt; style &gt; abaixo de style coloca o nome da tag para modificar , nesse cado MARCK , logo na frente da tag coloca assim : marck {background-color:cor que deseja por ;} depois so por &lt; /style &gt; . assim todos os mack teram a cor que dessidiu.</p>
+  
+   <p> podemos criar também <marck> um texto marcado </marck> usansdo a tag &lt; marck &gt; </p>
+   <p> esse é outro <marck> texto marcado </marck></p>
+   <p> da para mudar a cor somente <marck style="background-color:pink;">desse texto marcado</marck> colocando junto com o &lt; marck style=" backgroun-color: cor que deseja ;" &gt; </p>
+
+   <h2> texto grande e texto pequeno </h2>
+   <p> para deixar alguma palavra um <big>pouco maior</big> ou um <small>pouco menor </small> utiliza a tag &lt; big &gt; para aumentar e &lt; small&gt; para diminuir </p>
+
+   <h2> texto deletado/ errado </h2>
+   <p> para se ter <del> uma palavra deletada </del> utiliza a tag &lt; del &gt; </p>
+
+   <h2> texto insirido / sublinhado </h2>
+   <p> para sublinar a palavra tem dois jeitos , o primeiro seria o <ins>jeito semantico </ins> &lt; ins &gt;</p>
+   <p> já o outro jeito é o <u>não semantico </u> , utilizando a tag &lt; u &gt; </p>
+
+   <h2>texto sobreescrito </h2>
+   <p> para colocar uma palavra ou numero em cima de outro se usa a tag &lt; sup &gt; , como x<sup>4</sup> </p>
+   
+   <h2> texto subescrito </h2>
+   <p> para colocar uma palavra ou numero para baixo utiliza a tag &lt; sub &gt; , como em h<sub>2</sub>o , ou em maio<sub>de</sub> 2010 .</p>
+
+   <h1> outras formatações </h1>
+
+   <h2> codigo-font</h2>
+   <pre>
+    <p> ha tag &lt; code &gt;, é utilizada para fazer com que todas as letras, pontuações, numeros ocupem o mesmo tamanho na pagina, fica mias façil de ler :
+     qhyafbvibqe382789659.,/~[]
+    <code> qhyafbvibqe382789659.,/~[]</code> </p>
+   </pre>
+ 
+   <h2> escrever e aparecer igual </h2>
+    <pre>
+    	<code>
+          <p> temos a tg &lt; pre &gt; , que colocamos antes de começar a escrever ou seja:
+              &lt;pre&gt;
+                 &lt;code&gt;
+                   &lt;p&gt; texto &lt;/p&gt;
+                &lt;/code&gt;
+              &lt;/pre&gt; . </p>
+        </code>
+    </pre>
+  <h2>citações simples</h2>
+   <p> <q> é uma taga para colocar aspas ... 😒 </q>, a tag é  &lt;q&gt;</p>
+
+  <h2>citações completas</h2>
+  <p> para uma frase de citação , fica masi bonito deixar ela centralizada e abaixo : </p>
+  <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&t=1053s"> para fazer isso, utiliza a tag &lt; blockquote cite=" site da onde tirou a informação (para o google redirecionar caso queira ou algo do tipo) "&gt;
+  	 DAI VEM O TEXO 
+  	 &lt;/blockquote&gt;
+  </blockquote>
+
+  <h2>abreviações</h2>
+  <p> essa tag funciona para quando tiver uma abreviação no texto , o usuario so tem que passar o mause por cima da abreviação e ja vai mostar o termo completo , como :<abbr title="hypertext markup language ">html</abbr>
+  utilizando a tag &lt;abbr title='termo completo '&gt; abreviação &lt;/abbr&gt;
+
+  <h2> texto invertido </h2>
+  <p> é para o texto ficar espelhado :/ ,com a tag &lt;bdo dir='rtl'&gt; texto &lt;/bdo&gt;</p>
+  <p> <bdo dir="rtl">como isso da qui</bdo> </p>
+
+  <h3>gostaria de voltar para a pagina sobre links? : <a href="../link.html" rel="prev" tergt="_self">clik aqui </a></h3>
+  <p>lembrando para voltar de uma pasta que esta dentro de outra, precisa colocar ../ , o ../ significa voltar uma pasta.</p>
+  <p> &lt;a href="nome da pasta /nome do arquivo .html"  rel="prev"(prev=anterior) target="_self"&gt; A frase/ palavra a ser transformada em link &lt;/a&gt;</p>
+</body>
+</html>

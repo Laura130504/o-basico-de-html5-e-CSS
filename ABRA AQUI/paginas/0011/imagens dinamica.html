@@ -1,0 +1,61 @@
+<!doctype html>
+<htm lang="pt-br"> 
+<head>
+    <META CHARSET='UTF-8'/>
+    <meta name='viewport' content='wicht-device-nidth, initial-sacle-1.0'>
+    <title> imagem dinamica </title>
+    <style>
+      body{
+         background-color: rgb(174, 212, 238);
+      }
+  </style>
+</head>
+
+<body>
+    <h2>colocando foto dinamica</h2>
+    <p> quando um site e acessado por varios dispositivos diferentes com tamanho de tela diferente , é comun ver algum site aonde a imagem fica distorcida</p>
+    <p> para evitar isso utiliza a tag  &lt;picture&gt; , e dentro dela a tag  &lt;source&gt;</p>
+    <pre>
+    	<code>
+          <p> utiliza assim:
+              &lt;picture&gt;
+                 &lt;source media="(max-vidth: tamanho da imagem de baixo px)" srcset="pasta/nome da imagem.png" type='image/png'&gt;
+                   &lt;img src="pasta/nome da imagem.png" alt="imagem flexível"&gt; texto &lt;/p&gt;
+               
+              &lt;/picture&gt; . </p>
+        </code>
+    </pre>
+    <picture>
+      <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!-- o numero em px , é o numero da tela para quando chegar , torcar pela imagem dita-->
+      <source media="(max-width:1050px )" srcset="imagens/foto.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+   <h2>colocando musica no site </h2>
+   <p>para colocar musica no site se utiliza a tag &lt;audio&gt; da seguinte froma:</p>
+   <p> preload= antes de o saite carregadr qual vai ser a forma de carregar o audio. auto= o site so vai terminar de carregar quando o audio carregar por inteiro ,metadata=vai caregar so alguimas informacoes do auto e depois que o usuario acionar ele vair carregar o resto do mp3, e por ultimo o none=não vai carregar nada só quando o usuario acionar</p>
+   <p>controls=painel de controles da musica, aonde aperta o pley, pausa e tals</p>
+   <p>loop= a musica ficara tocando em loop ate ser pausada</p>
+   <p>o arquivo .mp3 é o mais usado porem dependendo do navegador pode ser que nao funcione por isso tem tambem .ogg e .wav</p>
+   <pre>
+     <code>
+       <p>  &lt;audio preload="metadata/auto/none" controls loop&gt;
+        &lt;source src="pasta aonde ta a musica/nome da musica.formato do arquivo&gt;       
+        &lt;source src="pasta aonde ta a musica/nome da musica.outro formato do arquivo&gt;   
+        &lt;p &gt; se der errado baixe o link &lt;a &gt;   &lt;/p &gt;   
+        &lt;/audio &gt;   
+
+
+       </p>
+        
+     </code> 
+   </pre> . 
+   <audio preload="metadata" controls loop>
+    <source src="midia/musica.mp3" type="audio/mp3">
+    <p>infelizmente seu navegador não reconhece o formato desse arquivo.</p>
+    <p><a href="midia/musica.mp3">click aqui</a>  para baixar o arquivo em mp3</p>
+
+   </audio>
+   <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+
+</html>

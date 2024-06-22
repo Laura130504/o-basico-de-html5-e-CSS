@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+</head>
+<body>
+    <h2>links paa um site externo ao seu.</h2>
+    <p> para tranformar uma palavra em link coloca a tag &lt;a href="link do site" target="_blank"(para abrir o link em outra pagina) rel="external"&gt; A frase/ palavra a ser transformada em link &lt;/a&gt;</p>
+    <p> como podemos transformar <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/" target="_blank" rel="external">essa palavra </a>em um link </p>
+    <h2>transformando uma imagem em link</h2>
+    <p> para transformar uma imagem em link, basta colocar &lt;a href="link" target="_blank"&gt;  depois dentro da tag &lt;a&gt; colocar a tag img &lt;img src="nome da img"&gt; e por fim o &lt;/a&gt; </p>
+    <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-2-links-internos-2/ " target="_blank">
+        <img src="dagao.png">
+    </a>
+    <br>
+    
+    <h2>links internos</h2>
+    <p> links internos são links que levaram para outra pagina , mas do seu proprio site.</p>
+    <p> os comando não mudam , mas sim o jeito que você vai usar eles.</p>
+    <p> utiliza a estrutura de codigo a seguir, para fazer links internos de arquino.html que estejam na mesma pasta :</p>
+    <p> &lt;a href="nome do arquivo .html"  rel="next" target="_self"(esta indicando para o google que esta direcionadno para uma pagina sua mesmo)&gt; A frase/ palavra a ser transformada em link &lt;/a&gt;</p>
+    <p>vamos voltar a estudar as <a href="listas.html" rel="next" target="_self"> listas e os seus tipos em HTML5 </a></p>
+    <p>agora se quiser fazer um link interno porem com um programa que esta em outra pasta, precisa informar o caminho a ser seguido.</p>
+    <p> como se poder ver vamos ter o exemplo de um programa que esta em uma pasta dentro da pasta desse programa.</p>
+    <p> &lt;a href="nome da pasta /nome do arquivo .html"  rel="next" target="_self"&gt; A frase/ palavra a ser transformada em link &lt;/a&gt;</p>
+    <p>e que tal nos revisarmos um pouco das <a href="pasta/principais formatações.html" rel="next" target="_self">principais formatações em HTML5</a></p>
+    <br>
+
+    <h2>links para download</h2>
+
+    <p>para baixar um arquivo precisa criar uma pasta dentro da pasta aonde esta o programa e nessa pasta colocar um arquivo ou em pdf ou em zip.</p>
+    <p>dependendo do navegador ele aceita ou não o comando.</p>
+    <h3>arquivo em pdf</h3>
+    <p>arquivo em pdf <a href="downloads/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf"> da aula 10 do gustavo guanabara</a></p>
+    <p>como podemos ver com o arquivo em pdf não deu certo, então vamos para o zip. </p>
+    <br>
+
+    <h3>arquivo em zip</h3>
+    <p><a href="downloads/10.zip" download="10.zip" type="application/zip">clik aqui</a> para baixar no computador o capitulo 10 do gustavo guanabara</p>
+    <p> para realizar isso, utilizamos o seguinte comando:</p>
+    <p>  &lt;a href="nome do arquivo .html" downloads="nome da pasta/nome do arquivo.zip" type="application/zip" &gt; A frase/ palavra a ser transformada em link &lt;/a&gt;</p>
+
+    <br>
+    <h1> para voltar a pagina</h1>
+    <p>  &lt;a href="../../Perfil.html" rel="prev" tergt="_self"&gt;clik aqui &lt;/a &gt; </a> </p>
+    <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
+</html>

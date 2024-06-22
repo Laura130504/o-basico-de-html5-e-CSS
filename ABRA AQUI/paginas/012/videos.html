@@ -1,0 +1,66 @@
+<!doctype html>
+<htm lang="pt-br"> 
+<head>
+    <META CHARSET='UTF-8'/>
+    <meta name='viewport' content='wicht-device-nidth, initial-sacle-1.0'>
+    <title> colocando video</title>
+    <style>
+      body{
+         background-color: rgb(174, 212, 238);
+      }
+  </style>
+</head>
+
+<body>
+    <h2> colocando video no site</h2>
+   <ul>
+     <li><p> aonde achar o video sem direito altoral: pexels é um site em ingles para baixar vidios e imagens sem direito altoral</p> </li>
+       <li> <p>como alterar o tamanho ou extenção/formato : handbrake , é o aplicativo para alterar essa coisas. </p></li>
+    </ul>
+   
+    <h2>inserindo videos hospedados localmente</h2>
+    <p> cada servidor acieta uma extenção de video, por isso se usa a forma de video agrupado, aonde se a primeira extençao nao funcionar a outra vai.</p>
+    <p>width= tamanho; Source= teste esse, se não der va para o outro</p>
+    <p> lembrando que essa tecnica de hospedagem de videos consome muito trafego de dados?(banda), entao pode ficar mega caro para o cliente .</p>
+    <p> controls=aparcer os controles do video; Poster= imagem de Capa para o video.</p>
+    
+    <pre>
+      <code>
+        <p> &lt; video width="200"  controls&gt;
+            &lt;source src="nome da pasta aonde ta o video/nome do video.mp4" type="video/mp4"&gt;
+
+            &lt;source src="pasta/nomde do video.webm" type="video/webm"&gt;
+
+            &lt;source src="nome do videio.mp4" type="video/mp4"&gt;
+
+            &lt;source src="nome do videio.outra extençao" type="video/outra extenção"&gt;
+
+            &lt;seu navegador não é compativel com a extenção.&lt;/p&gt;
+
+            &lt; /video&gt;
+        </p>    
+      </code>
+    </pre> 
+
+    <video width="200" poster="praia.jpg" controls>
+        <source src="videos/original.mp4" type="video/mp4">
+        <source src="videos/yourube.webm" type="video/webm">
+        <source src="videos/youtube.mp4" type="video/mp4">
+        <p>seu navegador não é compativel com a extenção.</p>
+    </video>
+    <h2>inserindo video hospedado externamente</h2>
+    <h3> no youtube : </h3>
+    <p>basta ir no video que gostaria de compartilhar no site youtube, apertar o botao dew compartilhar, depois em incorporar, e por fim e so copiar o codigo e colar  </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/juJkNKodgdE?si=mxlbkImCc6zRq8t5" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen></iframe>
+     <h3>no vimeo:</h3>
+     <p> no site da vimeo tem menos opcoes de video e para colocar videos na rede presisa ser  assinante. porem os videos que tem no  progrma nao aparece outros videos quando vc pausa e tambem a qualidade da imagem é melhor</p>
+     <p> para gerar o codigo do video pelo vimeo, basta entrar no video que deseja, apertar em compartilhar, escolher as opcoes que deseja, copiar o codigo e colar , facil ne ?!</p>
+     <iframe src="https://player.vimeo.com/video/945850281?h=4216976304&portrait=0" width="640" height="360" 
+     frameborder="0"
+     allow="autoplay; fullscreen; picture-in-picture" 
+     allowfullscreen></iframe>
+     <h3>gostaria de voltar para a pagina inicial? : <a href="../../Perfil.html" rel="prev" tergt="_self">clik aqui </a></h3>
+</body>
